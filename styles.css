@@ -324,6 +324,7 @@ img {
   position: relative;
   overflow: hidden;
   padding-top: 80px; /* Offset for header */
+  pointer-events: none; /* Allow clicks to pass through to background */
 }
 
 .hero-bg {
@@ -333,6 +334,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: -1;
+  pointer-events: auto; /* Re-enable pointer events for 3D interaction */
 }
 
 .hero-bg::after {
@@ -343,16 +345,17 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(to right, var(--bg-color) 0%, rgba(15, 23, 42, 0.8) 50%, rgba(15, 23, 42, 0.4) 100%);
+  pointer-events: none; /* Allow clicks through the gradient overlay */
 }
 
-.hero-bg img {
+.hero-bg spline-viewer {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .hero-content {
   max-width: 600px;
+  pointer-events: auto; /* Re-enable clicks for text and buttons */
 }
 
 .hero-subtitle {
