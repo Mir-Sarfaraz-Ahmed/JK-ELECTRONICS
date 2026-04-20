@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our expert repair services for TVs and ovens, and browse our catalog of premium Smart TVs for sale.">
+    <title>Services & Products | JK Electronics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color)"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+                <span>JK</span> Electronics
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" id="menu-toggle">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="active">Services & Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="background: var(--bg-surface); padding-top: 120px;">
+        <div class="container" style="text-align: center;">
+            <h1 class="section-title">What We Offer</h1>
+            <p class="section-subtitle">Professional repair services and premium retail products tailored for you.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="repairs" class="section">
+        <div class="container">
+            <h2 style="margin-bottom: var(--spacing-md); text-align: center;">Expert Repair Services</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-md);">
+                
+                <div class="card" style="border-top: 4px solid var(--primary-color);">
+                    <h3 class="card-title">Television Repair</h3>
+                    <p class="card-desc">We specialize in fixing all major brands of LEDs, LCDs, and Smart TVs. From screen issues to mainboard replacements, we've got you covered.</p>
+                    <ul style="color: var(--text-secondary); margin-bottom: 1rem; list-style-type: disc; padding-left: 1.5rem;">
+                        <li>Screen flickering / No picture</li>
+                        <li>Sound issues</li>
+                        <li>Power supply repairs</li>
+                    </ul>
+                    <a href="contact.html#book" class="btn btn-outline" style="width: 100%;">Book Repair</a>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--secondary-color);">
+                    <h3 class="card-title">Oven Repair</h3>
+                    <p class="card-desc">Don't let a broken oven ruin dinner. Our technicians can quickly diagnose and repair microwaves and conventional ovens.</p>
+                    <ul style="color: var(--text-secondary); margin-bottom: 1rem; list-style-type: disc; padding-left: 1.5rem;">
+                        <li>Not heating</li>
+                        <li>Turntable not spinning</li>
+                        <li>Control board errors</li>
+                    </ul>
+                    <a href="contact.html#book" class="btn btn-outline" style="width: 100%;">Book Repair</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 style="margin-bottom: var(--spacing-md); text-align: center;">Premium Smart TV Sales</h2>
+            
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <img src="assets/images/smart_tv_showcase.png" alt="OLED Smart TV" style="width: 100%; border-radius: var(--radius-lg); margin-bottom: var(--spacing-md); box-shadow: var(--shadow-lg);">
+                <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Upgrade Your Home Entertainment</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">Beyond our expert repair services, we also offer a curated selection of the latest, high-definition, 4K, and ultra-thin Smart TVs. Whether you are looking for OLED, QLED, or just a reliable upgrade for your living room, we can source and supply the perfect model for your needs and budget.</p>
+                <a href="contact.html#enquiry" class="btn btn-primary">Enquire About New TVs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>JK Electronics</h4>
+                    <p>Your one-stop solution for electronics repair and retail in the local area.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services & Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#repairs">TV Repair</a></li>
+                        <li><a href="services.html#repairs">Oven Repair</a></li>
+                        <li><a href="services.html#products">Smart TV Retail</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>Phone: (555) 123-4567</p>
+                    <p>Email: info@jkelectronics.com</p>
+                    <p>123 Tech Avenue, City, State</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 JK Electronics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
