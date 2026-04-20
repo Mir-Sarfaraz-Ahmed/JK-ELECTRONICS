@@ -113,3 +113,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+// --- Spotlight Glow Card Effect ---
+document.addEventListener('DOMContentLoaded', () => {
+    const robotCard = document.getElementById('robot-card');
+    
+    if (robotCard) {
+        document.addEventListener('pointermove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            
+            robotCard.style.setProperty('--x', x.toFixed(2));
+            robotCard.style.setProperty('--xp', (x / window.innerWidth).toFixed(2));
+            robotCard.style.setProperty('--y', y.toFixed(2));
+            robotCard.style.setProperty('--yp', (y / window.innerHeight).toFixed(2));
+        });
+    }
+});

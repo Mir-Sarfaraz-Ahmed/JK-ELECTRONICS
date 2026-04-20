@@ -60,9 +60,10 @@
                 </div>
                 
                 <div class="hero-visual animate-fade-in" style="flex: 1; min-width: 300px; max-width: 450px; animation-delay: 0.2s;">
-                    <!-- Interactive 3D Robot Card -->
-                    <div class="card" style="background: rgba(30, 41, 59, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.1); padding: 0; overflow: hidden; height: 400px; border-radius: var(--radius-lg);">
-                        <div style="width: 100%; height: calc(100% + 160px); margin-top: -80px; position: relative;">
+                    <!-- Interactive 3D Robot Card with Spotlight Glow -->
+                    <div class="card glow-card" id="robot-card" data-glow style="backdrop-filter: blur(10px); padding: 0; overflow: hidden; height: 400px; border-radius: 24px; box-shadow: 0 1rem 2rem -1rem black;">
+                        <div data-glow></div>
+                        <div style="width: 100%; height: calc(100% + 160px); margin-top: -80px; position: relative; z-index: 10;">
                             <spline-viewer url="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode" style="width: 100%; height: 100%;"></spline-viewer>
                         </div>
                     </div>
