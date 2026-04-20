@@ -425,6 +425,11 @@ textarea.form-control {
   animation: fadeIn 0.8s ease-out forwards;
 }
 
+/* Hide Spline Watermark */
+spline-viewer::part(logo) {
+  display: none !important;
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .nav-links {

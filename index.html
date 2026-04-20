@@ -47,14 +47,27 @@
             <img src="assets/images/smart_tv_showcase.png" alt="Sleek modern Smart TV in living room">
         </div>
         <div class="container">
-            <div class="hero-content animate-fade-in">
-                <span class="hero-subtitle">Your Tech, Perfected.</span>
-                <h1 class="hero-title">Expert Repairs & Premium Smart TVs</h1>
-                <p class="hero-desc">From fast, reliable repair services for your essential home appliances to upgrading
-                    your living room with the latest Smart TVs. JK Electronics is your trusted local partner.</p>
-                <div class="hero-cta">
-                    <a href="contact.html#book" class="btn btn-primary">Book a Repair</a>
-                    <a href="contact.html#enquiry" class="btn btn-secondary">Upgrade Your View</a>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--spacing-lg);">
+                <div class="hero-content animate-fade-in" style="flex: 1; min-width: 300px; margin: 0;">
+                    <span class="hero-subtitle">Your Tech, Perfected.</span>
+                    <h1 class="hero-title">Expert Repairs & Premium Smart TVs</h1>
+                    <p class="hero-desc">From fast, reliable repair services for your essential home appliances to upgrading
+                        your living room with the latest Smart TVs. JK Electronics is your trusted local partner.</p>
+                    <div class="hero-cta">
+                        <a href="contact.html#book" class="btn btn-primary">Book a Repair</a>
+                        <a href="contact.html#enquiry" class="btn btn-secondary">Upgrade Your View</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-fade-in" style="flex: 1; min-width: 300px; max-width: 450px; animation-delay: 0.2s;">
+                    <!-- Interactive 3D Robot Card -->
+                    <div class="card" style="background: rgba(30, 41, 59, 0.85); backdrop-filter: blur(10px); border-color: rgba(255,255,255,0.1);">
+                        <div style="width: 100%; height: 300px; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm); overflow: hidden; position: relative;">
+                            <spline-viewer url="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></spline-viewer>
+                        </div>
+                        <h3 class="card-title">Interactive 3D Robot</h3>
+                        <p class="card-desc">Meet Whobee! You can click, drag, and spin this interactive assistant directly from here.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -91,14 +104,6 @@
                         style="padding: 0.5rem 1rem; font-size: 0.9rem;">Learn More</a>
                 </div>
 
-                <!-- Interactive 3D Robot Card -->
-                <div class="card">
-                    <div style="width: 100%; height: 200px; border-radius: var(--radius-md); margin-bottom: var(--spacing-sm); overflow: hidden; position: relative;">
-                        <spline-viewer url="https://prod.spline.design/PyzDhpQ9E5f1E3MT/scene.splinecode" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></spline-viewer>
-                    </div>
-                    <h3 class="card-title">Interactive 3D Robot</h3>
-                    <p class="card-desc">Meet Whobee, our interactive 3D robot! You can click, drag, and spin it right from this card. Works on all devices including mobile phones.</p>
-                </div>
             </div>
         </div>
     </section>
